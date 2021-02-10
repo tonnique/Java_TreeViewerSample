@@ -3,14 +3,14 @@ package sample.tree.api;
 public class Book {
 	
 	String title;
-	String ISDN;
+	String ISBN;
 	int year;
 	Publisher publisher;
 	
 
 	public Book(String title, String isdn, int year) {
 		this.title = title;
-		this.ISDN = isdn;
+		this.ISBN = isdn;
 		this.year = year;
 	}
 	
@@ -21,12 +21,12 @@ public class Book {
 		this.title = title;
 	}
 	
-	public String getISDN() {
-		return ISDN;
+	public String getISBN() {
+		return ISBN;
 	}
 	
-	public void setISDN(String iSDN) {
-		ISDN = iSDN;
+	public void setISBN(String iSBN) {
+		ISBN = iSBN;
 	}
 	
 	public int getYear() {

@@ -34,10 +34,9 @@ public class SampleTreeViewer extends ViewPart {
 	@Override
 	public void createPartControl(Composite parent) {		
 		viewer = new TreeViewer(parent, SWT.MULTI | SWT.H_SCROLL | SWT.V_SCROLL);
-		
-		//viewer.setContentProvider(new TreeObjectViewContentProvider());
+				
 		viewer.setContentProvider(new AuthorContentProvider());
-		viewer.setLabelProvider(new ViewLabelProvider());		
+		viewer.setLabelProvider(new ViewLabelProvider());	
 		viewer.setInput(initializeWthAuthors());
 	
 		// Create the help context id for the viewer's control
